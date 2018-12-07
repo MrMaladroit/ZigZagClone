@@ -121,9 +121,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 43370939}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Group
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 102622149}
   - component: {fileID: 102622151}
   - component: {fileID: 102622150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4926,6 +4926,10 @@ Prefab:
       propertyPath: m_TagString
       value: Collectibles
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95000012936460090, guid: 465c505844950da499dcf096a6da4409, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 465c505844950da499dcf096a6da4409, type: 2}
@@ -4981,6 +4985,18 @@ Prefab:
     - target: {fileID: 4003452457294156, guid: 764732756d8948140b1970b24c989c88, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}
@@ -5085,7 +5101,7 @@ GameObject:
   - component: {fileID: 562661181}
   - component: {fileID: 562661183}
   - component: {fileID: 562661182}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9764,6 +9780,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}
   m_IsPrefabAsset: 0
@@ -9813,6 +9841,18 @@ Prefab:
     - target: {fileID: 4003452457294156, guid: 764732756d8948140b1970b24c989c88, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}
@@ -9902,6 +9942,10 @@ Prefab:
       propertyPath: m_TagString
       value: Collectibles
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95000012936460090, guid: 465c505844950da499dcf096a6da4409, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 465c505844950da499dcf096a6da4409, type: 2}
@@ -9938,7 +9982,7 @@ GameObject:
   - component: {fileID: 1243552090}
   - component: {fileID: 1243552092}
   - component: {fileID: 1243552091}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14591,42 +14635,26 @@ Prefab:
       propertyPath: m_Name
       value: Ground Block (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1258929874 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1742465999624646, guid: 9ee50b3a3c0f51d4297b4d64f294696c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1889664366}
---- !u!65 &1258929875
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1258929874}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28239065, y: 1, z: 0.20656073}
-  m_Center: {x: -0.0023562165, y: 0.5, z: -0.013704508}
 --- !u!4 &1258929878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4882407656883788, guid: 9ee50b3a3c0f51d4297b4d64f294696c,
     type: 2}
   m_PrefabInternal: {fileID: 1889664366}
---- !u!114 &1258929879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1258929874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78af4b9060d8be74a8acba586a71ef8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1267505191
 Prefab:
   m_ObjectHideFlags: 0
@@ -14689,6 +14717,10 @@ Prefab:
     - target: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 2}
       propertyPath: m_TagString
       value: Collectibles
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95000012936460090, guid: 465c505844950da499dcf096a6da4409, type: 2}
@@ -14778,7 +14810,19 @@ Prefab:
     - target: {fileID: 198497169244934504, guid: 764732756d8948140b1970b24c989c88,
         type: 2}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}
@@ -14830,6 +14874,18 @@ Prefab:
     - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
       propertyPath: m_Name
       value: Ground Block (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}
@@ -14939,6 +14995,10 @@ Prefab:
       propertyPath: m_TagString
       value: Collectibles
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012006197310, guid: 465c505844950da499dcf096a6da4409, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95000012936460090, guid: 465c505844950da499dcf096a6da4409, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 465c505844950da499dcf096a6da4409, type: 2}
@@ -14986,6 +15046,18 @@ Prefab:
       propertyPath: m_Name
       value: Ground Block (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}
   m_IsPrefabAsset: 0
@@ -15028,22 +15100,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 54371221642759656, guid: 9ee50b3a3c0f51d4297b4d64f294696c,
+    - target: {fileID: 114696699005219338, guid: 9ee50b3a3c0f51d4297b4d64f294696c,
         type: 2}
-      propertyPath: m_Constraints
-      value: 0
+      propertyPath: layerMask.m_Bits
+      value: 512
       objectReference: {fileID: 0}
-    - target: {fileID: 95327527146998286, guid: 9ee50b3a3c0f51d4297b4d64f294696c,
+    - target: {fileID: 65311309531205444, guid: 9ee50b3a3c0f51d4297b4d64f294696c,
         type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f40a251bf5ed9a2418175e3051b9385d, type: 2}
-    - target: {fileID: 1742465999624646, guid: 9ee50b3a3c0f51d4297b4d64f294696c, type: 2}
-      propertyPath: m_TagString
-      value: Player
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 136245753891095784, guid: 9ee50b3a3c0f51d4297b4d64f294696c, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee50b3a3c0f51d4297b4d64f294696c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1891360494
@@ -15056,7 +15123,7 @@ GameObject:
   - component: {fileID: 1891360495}
   - component: {fileID: 1891360497}
   - component: {fileID: 1891360496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19742,6 +19809,18 @@ Prefab:
     - target: {fileID: 4003452457294156, guid: 764732756d8948140b1970b24c989c88, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817743008517146, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357730613393754, guid: 764732756d8948140b1970b24c989c88, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764732756d8948140b1970b24c989c88, type: 2}

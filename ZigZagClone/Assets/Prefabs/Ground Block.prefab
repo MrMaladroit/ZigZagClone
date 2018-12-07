@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33047405307241820}
   - component: {fileID: 23686071509279326}
   - component: {fileID: 65255998704018596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Block
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4841666666276610}
   - component: {fileID: 198497169244934504}
   - component: {fileID: 199837032393714238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 23606148161861876}
   - component: {fileID: 65647252257198948}
   - component: {fileID: 114002593072852042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crystal Collectible
   m_TagString: Collectibles
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1259287324791638}
   m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 2.828, y: 0, z: 2.828}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4003452457294156}

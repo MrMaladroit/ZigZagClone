@@ -3,16 +3,21 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour
 {
+    [SerializeField]
+    private LayerMask layerMask;
     private Rigidbody rb;
     private bool isWalkingRight = true;
     private bool isGameRunning = false;
     private Animator animationController;
+    private Transform rayCastOrigin;
+    
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         animationController = GetComponent<Animator>();
+        rayCastOrigin = GetComponent<Transform>();
     }
 
     private void Update()
@@ -26,6 +31,10 @@ public class PlayerMovementController : MonoBehaviour
         {
             TurnCharacter();
         }
+
+        if (transform.position.y < 0.45f)
+            animationController.SetBool("isFalling", true);
+
     }
 
 
