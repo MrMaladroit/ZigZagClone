@@ -512,7 +512,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 353391262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1988104578}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &353391262
@@ -718,7 +729,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 486255313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1988104578}
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &486255313
@@ -786,6 +808,7 @@ MonoBehaviour:
   roadPrefab: {fileID: 1259287324791638, guid: 764732756d8948140b1970b24c989c88, type: 2}
   crystalRoadPiece: {fileID: 1478904160160114, guid: 5f01cd26e07ecec4aabb3761bd5dc435,
     type: 2}
+  collectibleSpawnRate: 20
 --- !u!4 &526182528
 Transform:
   m_ObjectHideFlags: 0
@@ -1178,7 +1201,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Score: '
+  m_Text: 'Score: 0'
 --- !u!222 &664219006
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1508,6 +1531,7 @@ GameObject:
   - component: {fileID: 1196556086}
   - component: {fileID: 1196556088}
   - component: {fileID: 1196556087}
+  - component: {fileID: 1196556089}
   m_Layer: 5
   m_Name: GameOver Panel
   m_TagString: Untagged
@@ -1572,6 +1596,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1196556085}
   m_CullTransparentMesh: 0
+--- !u!114 &1196556089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196556085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf7817565b499a4a9c512f2d2580676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverScore: {fileID: 637697206}
+  gameOverHighScore: {fileID: 823227529}
 --- !u!4 &1258929878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4882407656883788, guid: 9ee50b3a3c0f51d4297b4d64f294696c,
@@ -1773,9 +1810,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 664219005}
-  highScoreText: {fileID: 0}
+  highScoreText: {fileID: 823227529}
   gameOverPanel: {fileID: 1196556085}
-  score: 0
 --- !u!4 &2064451804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4124980881724872, guid: 5f01cd26e07ecec4aabb3761bd5dc435,

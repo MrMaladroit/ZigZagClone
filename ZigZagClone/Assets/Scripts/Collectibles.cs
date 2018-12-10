@@ -7,6 +7,7 @@ public class Collectibles : MonoBehaviour
     private ParticleSystem particleSystemInChild;
     private MeshRenderer meshRendererComponent;
 
+    [SerializeField]
     private int scoreValue = 15;
 
 
@@ -24,11 +25,11 @@ public class Collectibles : MonoBehaviour
         }
 
         Debug.Log("OnTriggerEnter Triggered By Player");
+        GameManager.instance.UpdateScore(scoreValue);
 
         particleSystemInChild.Play();
         meshRendererComponent.enabled = false;
 
-        GameManager.instance.score += scoreValue;
         Destroy(gameObject, 2);
     }
     #endregion

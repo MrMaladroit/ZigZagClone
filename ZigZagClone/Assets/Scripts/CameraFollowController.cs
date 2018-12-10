@@ -9,7 +9,10 @@ public class CameraFollowController : MonoBehaviour
 
     private void Update()
     {
-        gameObject.transform.position = target.transform.position + offset;
+        if(PlayerMovementController.IsFalling == false)
+        {
+            gameObject.transform.position = target.transform.position + offset;                    
+        }
     }
 
 }

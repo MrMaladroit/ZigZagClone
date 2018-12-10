@@ -10,58 +10,65 @@ public class PlayerMovementController : MonoBehaviour
     private bool isGameRunning = false;
     private Animator animationController;
     private Transform rayCastOrigin;
-
-    public static Vector3 playerStartingPosition;
-    public static Vector3 playerCurrentPosition;
+    private float playerSpeed = 2f;
+    private int speedIncreaseInvokeRate = 10;
+    private static bool isFalling;
     
-
+    public static bool IsFalling { get { return isFalling; } }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         animationController = GetComponent<Animator>();
         rayCastOrigin = GetComponent<Transform>();
-        playerStartingPosition = gameObject.transform.position;
+        isFalling = false;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            isGameRunning = true;
-            animationController.SetBool("isGameRunning", isGameRunning);
+            StartGame();
         }
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             TurnCharacter();
         }
 
         if (transform.position.y < 0.45f)
         {
-            animationController.SetBool("isFalling", true);
+            isFalling = true;
+            animationController.SetBool("isFalling", isFalling);
             Invoke("GameOver", 2);
-        }
-            
-
+        }                
     }
 
+    private void StartGame()
+    {
+        isGameRunning = true;
+        animationController.SetBool("isGameRunning", isGameRunning);
+        InvokeRepeating("IncreaseSpeed", speedIncreaseInvokeRate, speedIncreaseInvokeRate);
+    }
 
     private void FixedUpdate()
     {
         if(isGameRunning)
         {
-            MoveCharacterForward();
+            MoveCharacterForward(); 
         }
     }
 
-    private void LateUpdate()
+    private void IncreaseSpeed()
     {
-        playerCurrentPosition = this.transform.position;
+        if(isGameRunning)
+        {
+            playerSpeed += 0.25f;
+        }
     }
 
     private void MoveCharacterForward()
     {
-        rb.transform.position = transform.position + transform.forward * 2 * Time.deltaTime;
+        rb.transform.position = transform.position + transform.forward * playerSpeed * Time.deltaTime;
     }
 
     private void TurnCharacter()
