@@ -5,7 +5,9 @@ public class Collectibles : MonoBehaviour
     // If more collectibles are add, extract this into a Crystal class that inherits this class.
     #region Crystal Collectible Code
     private ParticleSystem particleSystemInChild;
-    private MeshRenderer meshRendererComponent; 
+    private MeshRenderer meshRendererComponent;
+
+    private int scoreValue = 15;
 
 
     private void Awake()
@@ -25,7 +27,8 @@ public class Collectibles : MonoBehaviour
 
         particleSystemInChild.Play();
         meshRendererComponent.enabled = false;
-        
+
+        GameManager.instance.score += scoreValue;
         Destroy(gameObject, 2);
     }
     #endregion

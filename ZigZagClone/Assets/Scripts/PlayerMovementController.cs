@@ -10,6 +10,9 @@ public class PlayerMovementController : MonoBehaviour
     private bool isGameRunning = false;
     private Animator animationController;
     private Transform rayCastOrigin;
+
+    public static Vector3 playerStartingPosition;
+    public static Vector3 playerCurrentPosition;
     
 
 
@@ -18,6 +21,7 @@ public class PlayerMovementController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         animationController = GetComponent<Animator>();
         rayCastOrigin = GetComponent<Transform>();
+        playerStartingPosition = gameObject.transform.position;
     }
 
     private void Update()
@@ -33,7 +37,11 @@ public class PlayerMovementController : MonoBehaviour
         }
 
         if (transform.position.y < 0.45f)
+        {
             animationController.SetBool("isFalling", true);
+            Invoke("GameOver", 2);
+        }
+            
 
     }
 
@@ -44,6 +52,11 @@ public class PlayerMovementController : MonoBehaviour
         {
             MoveCharacterForward();
         }
+    }
+
+    private void LateUpdate()
+    {
+        playerCurrentPosition = this.transform.position;
     }
 
     private void MoveCharacterForward()
@@ -60,5 +73,11 @@ public class PlayerMovementController : MonoBehaviour
         else
             transform.rotation = Quaternion.Euler(0, -45, 0);
 
+    }
+
+    private void GameOver()
+    {
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+        GameManager.instance.GameOver();
     }
 }
