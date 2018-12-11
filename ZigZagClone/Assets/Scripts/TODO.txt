@@ -1,0 +1,9 @@
+﻿                              
+                          ZigZag Clone TODO
+                         
+Create animation for the background in the Title Scene                        
+Add better prefab spawning
+Add object cleanup for objects no longer needed in scene.
+Add music and sound effects
+
+
